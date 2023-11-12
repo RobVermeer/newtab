@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: #fff;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  color: #1a2129;
+}
+
+a {
+  cursor: pointer;
+}
+
+main {
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  height: 100%;
+  user-select: none;
+}
+
+.avatar {
+  width: 3rem;
+  align-self: flex-end;
+}
+
+.avatar img {
+  border-radius: 50%;
+  box-shadow: 2px 2px 16px -4px rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
